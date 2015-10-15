@@ -1,0 +1,26 @@
+// ==========================================================================
+//   Dimensions
+// ==========================================================================
+// Border Width
+$border-width : 1px;
+
+// Ad Size
+$ad-width : 970px;
+$ad-height : 250px;
+
+// ==========================================================================
+//   Colors
+// ==========================================================================
+// Color Pallet
+$color-black : #000;
+$color-white : #FFF;
+$color-blue : #134e69;
+$color-Green : #66aa33;
+$color-grey : #cccccc;
+$color-DrkGrey : #424242;
+
+// Colored Elements
+$color-border : $color-black;
+$color-border-transparent : rgba($color-border, 0);
+$color-button-face : #E6211C;
+$color-button-border : #FA2F19;

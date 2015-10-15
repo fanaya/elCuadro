@@ -1,0 +1,41 @@
+// ==========================================================================
+//   Sizing Short Cuts
+// ==========================================================================
+// Simple Size
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+// Square Size
+@mixin square($size) {
+  @include size($size, $size);
+}
+// Fill Element
+@mixin fill($position : absolute) {
+  @include position($position, 0 null null 0);
+  @include size(100%, 100%);
+}
+
+
+// ==========================================================================
+//   Box Shadow
+// ==========================================================================
+// Box Shadow
+@mixin box-shadow($shadow-settings) {
+  -webkit-box-shadow: $shadow-settings;
+  -moz-box-shadow:    $shadow-settings;
+  box-shadow:         $shadow-settings;
+}
+
+
+// ==========================================================================
+//   Opacity
+// ==========================================================================
+// Opacity
+@mixin opacity($trans) {
+  filter         : alpha(opactiy=($trans * 100));
+  -ms-filter     : "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$trans * 100})";
+  -moz-opacity   : $trans;
+  -khtml-opacity : $trans;
+  opacity        : $trans;
+}

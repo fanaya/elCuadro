@@ -1,0 +1,451 @@
+/* ===============================================================
+ * ~~~~~~~~~~~~~~~~~~~~~~ Sense 8 | Banners ~~~~~~~~~~~~~~~~~~~~~~
+ * ===============================================================
+ */
+/* line 4, ../../source/styles/_core.scss */
+body {
+  margin: 0;
+  padding: 0; }
+  /* line 9, ../../source/styles/_core.scss */
+  body.test #ad {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+/* line 16, ../../source/styles/_core.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 20, ../../source/styles/_core.scss */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* line 25, ../../source/styles/_core.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+  /* line 32, ../../source/styles/_core.scss */
+  .ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%; }
+
+/* line 44, ../../source/styles/_core.scss */
+#ad {
+  width: 970px;
+  height: 250px;
+  display: none;
+  position: relative;
+  overflow: hidden;
+  background-color: #424242;
+  z-index: 1; }
+  /* line 52, ../../source/styles/_core.scss */
+  #ad.ready {
+    display: block; }
+
+/* line 57, ../../source/styles/_core.scss */
+.bg_image {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% 100%;
+  -webkit-backface-visibility: hidden; }
+
+/* line 64, ../../source/styles/_core.scss */
+.border-frame {
+  position: absolute;
+  background-color: #000;
+  z-index: 100; }
+  /* line 69, ../../source/styles/_core.scss */
+  .border-frame.left {
+    left: 0; }
+  /* line 72, ../../source/styles/_core.scss */
+  .border-frame.right {
+    right: 0; }
+  /* line 76, ../../source/styles/_core.scss */
+  .border-frame.left, .border-frame.right {
+    top: 0;
+    width: 1px;
+    height: 100%; }
+  /* line 82, ../../source/styles/_core.scss */
+  .border-frame.top {
+    top: 0; }
+  /* line 85, ../../source/styles/_core.scss */
+  .border-frame.bottom {
+    bottom: 0; }
+  /* line 89, ../../source/styles/_core.scss */
+  .border-frame.top, .border-frame.bottom {
+    left: 0;
+    width: 100%;
+    height: 1px; }
+
+/* line 100, ../../source/styles/_core.scss */
+.bg-exit {
+  cursor: pointer; }
+  /* line 101, ../../source/styles/_core.scss */
+  .bg-exit.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* line 6, ../../source/styles/_end-card.scss */
+#ytClose_dc {
+  z-index: 30; }
+
+/* line 12, ../../source/styles/_end-card.scss */
+#videoTT {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+  /* line 14, ../../source/styles/_end-card.scss */
+  #videoTT svg, #videoTT use {
+    width: 80px;
+    fill: #66aa33; }
+
+/* line 21, ../../source/styles/_end-card.scss */
+#videoCap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 446px;
+  height: 250px;
+  background-color: #000;
+  z-index: 6; }
+
+/* line 27, ../../source/styles/_end-card.scss */
+#ttVid {
+  position: absolute;
+  top: 26px;
+  left: 157px;
+  z-index: 2; }
+  /* line 29, ../../source/styles/_end-card.scss */
+  #ttVid svg, #ttVid use {
+    width: 128px;
+    fill: #66aa33; }
+
+/* line 32, ../../source/styles/_end-card.scss */
+#actionTxt {
+  position: absolute;
+  top: 182px;
+  left: 82px;
+  width: 282px;
+  height: 15px;
+  z-index: 2; }
+  /* line 35, ../../source/styles/_end-card.scss */
+  #actionTxt svg, #actionTxt path {
+    fill: #FFF; }
+
+/* line 38, ../../source/styles/_end-card.scss */
+#playVideoButton {
+  position: absolute;
+  top: 96px;
+  left: 194px;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 11; }
+  /* line 42, ../../source/styles/_end-card.scss */
+  #playVideoButton svg,
+  #playVideoButton circle {
+    fill: #000;
+    fill-opacity: 0.5;
+    stroke: #FFF;
+    stroke-width: 8;
+    stroke-miterlimit: 10; }
+  /* line 44, ../../source/styles/_end-card.scss */
+  #playVideoButton polyline {
+    fill: #FFF;
+    fill-opacity: 1;
+    stroke: #FFF;
+    stroke-width: 2; }
+  /* line 47, ../../source/styles/_end-card.scss */
+  #playVideoButton:hover svg,
+  #playVideoButton:hover circle {
+    fill: #000;
+    fill-opacity: 0.5;
+    stroke: #66aa33;
+    stroke-width: 8;
+    stroke-miterlimit: 10; }
+  /* line 49, ../../source/styles/_end-card.scss */
+  #playVideoButton:hover polyline {
+    fill: #66aa33;
+    fill-opacity: 1;
+    stroke: #66aa33;
+    stroke-width: 2; }
+
+/* line 58, ../../source/styles/_end-card.scss */
+#thumbnails {
+  position: absolute;
+  top: 0px;
+  left: 446px;
+  width: 128px;
+  height: 250px;
+  z-index: 6; }
+
+/* line 63, ../../source/styles/_end-card.scss */
+#div1 {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 128px;
+  height: 3px;
+  z-index: 4; }
+  /* line 66, ../../source/styles/_end-card.scss */
+  #div1 svg,
+  #div1 rect {
+    fill: #FFF; }
+
+/* line 70, ../../source/styles/_end-card.scss */
+#div2 {
+  position: absolute;
+  top: 153px;
+  left: 0px;
+  width: 128px;
+  height: 3px;
+  z-index: 4; }
+  /* line 73, ../../source/styles/_end-card.scss */
+  #div2 svg,
+  #div2 use {
+    fill: #FFF; }
+
+/* line 86, ../../source/styles/_end-card.scss */
+.thumbTxtStyle, #thumbTxt1, #thumbTxt2, #thumbTxt3 {
+  position: absolute;
+  top: 62px;
+  left: 14px;
+  width: 103px;
+  height: 8px;
+  z-index: 3;
+  pointer-events: none; }
+  /* line 91, ../../source/styles/_end-card.scss */
+  .thumbTxtStyle svg, #thumbTxt1 svg, #thumbTxt2 svg, #thumbTxt3 svg,
+  .thumbTxtStyle use,
+  #thumbTxt1 use,
+  #thumbTxt2 use,
+  #thumbTxt3 use {
+    fill: #FFF; }
+
+/* line 103, ../../source/styles/_end-card.scss */
+.whiteFade, #white1, #white2, #white3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  opacity: 0;
+  z-index: 3; }
+
+/* line 109, ../../source/styles/_end-card.scss */
+#thumb1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 128px;
+  height: 84px;
+  background-image: url("../img/thumb1.jpg");
+  z-index: 1;
+  cursor: pointer; }
+  /* line 116, ../../source/styles/_end-card.scss */
+  #thumb1:hover #white1 {
+    opacity: 0.5 !important; }
+
+/* line 120, ../../source/styles/_end-card.scss */
+#thumb2 {
+  position: absolute;
+  top: 84px;
+  left: 0px;
+  width: 128px;
+  height: 83px;
+  background-image: url("../img/thumb2.jpg");
+  z-index: 1;
+  cursor: pointer; }
+  /* line 127, ../../source/styles/_end-card.scss */
+  #thumb2:hover #white2 {
+    opacity: 0.5 !important; }
+
+/* line 131, ../../source/styles/_end-card.scss */
+#thumb3 {
+  position: absolute;
+  top: 167px;
+  left: 0px;
+  width: 128px;
+  height: 83px;
+  background-image: url("../img/thumb3.jpg");
+  z-index: 1;
+  cursor: pointer; }
+  /* line 138, ../../source/styles/_end-card.scss */
+  #thumb3:hover #white3 {
+    opacity: 0.5 !important; }
+
+/* line 148, ../../source/styles/_end-card.scss */
+#tt {
+  position: absolute;
+  top: 17px;
+  left: 698px;
+  width: 147px;
+  height: 51px; }
+  /* line 151, ../../source/styles/_end-card.scss */
+  #tt svg, #tt path {
+    fill: #66aa33; }
+
+/* line 155, ../../source/styles/_end-card.scss */
+#tag {
+  position: absolute;
+  top: 107px;
+  left: 608px;
+  width: 324px;
+  height: 45px; }
+  /* line 158, ../../source/styles/_end-card.scss */
+  #tag svg, #tag path {
+    fill: #FFF; }
+
+/* line 162, ../../source/styles/_end-card.scss */
+#cta {
+  position: absolute;
+  top: 193px;
+  left: 649px;
+  width: 246px;
+  height: 38px;
+  z-index: 11;
+  cursor: pointer; }
+  /* line 165, ../../source/styles/_end-card.scss */
+  #cta svg, #cta rect {
+    fill: #66aa33; }
+  /* line 167, ../../source/styles/_end-card.scss */
+  #cta:hover svg, #cta:hover rect {
+    fill: #FFF; }
+  /* line 168, ../../source/styles/_end-card.scss */
+  #cta:hover #ctaTxt svg, #cta:hover #ctaTxt path {
+    fill: #66aa33; }
+
+/* line 175, ../../source/styles/_end-card.scss */
+#ctaTxt {
+  position: absolute;
+  top: 11px;
+  left: 28px;
+  width: 189px;
+  height: 15px;
+  z-index: 3; }
+  /* line 178, ../../source/styles/_end-card.scss */
+  #ctaTxt svg, #ctaTxt path {
+    fill: #FFF; }
+
+/* line 187, ../../source/styles/_end-card.scss */
+#end-card {
+  z-index: 1; }
+  /* line 190, ../../source/styles/_end-card.scss */
+  #end-card > .bg-exit {
+    z-index: 5; }
+
+/* line 195, ../../source/styles/_end-card.scss */
+#actionTxt,
+#ttVid,
+#div,
+#div2,
+#tt,
+#tag {
+  pointer-events: none; }
+
+/* line 2, ../../source/styles/_video-card.scss */
+#video-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #FFF; }
+
+/* line 8, ../../source/styles/_video-card.scss */
+#snd-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  overflow: hidden; }
+  /* line 13, ../../source/styles/_video-card.scss */
+  #snd-icon svg,
+  #snd-icon path {
+    fill: #66aa33; }
+
+/* line 20, ../../source/styles/_video-card.scss */
+.hide {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
+
+/* line 31, ../../source/styles/_video-card.scss */
+#videoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 970px;
+  height: 250px;
+  z-index: 10; }
+
+/* line 39, ../../source/styles/_video-card.scss */
+#videoContainer {
+  width: 100%;
+  height: 100%; }
+
+/* line 43, ../../source/styles/_video-card.scss */
+#videoClick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  cursor: pointer; }
+
+/* line 50, ../../source/styles/_video-card.scss */
+#close {
+  z-index: 12;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0.8);
+  cursor: pointer; }
+
+/* line 61, ../../source/styles/_video-card.scss */
+.smaller-video#videoWrapper {
+  left: 0px;
+  top: 0px;
+  width: 446px !important;
+  height: 250px !important; }
+  /* line 69, ../../source/styles/_video-card.scss */
+  .smaller-video#videoWrapper #videoClick {
+    width: 100% !important;
+    height: 200px !important; }
+  /* line 75, ../../source/styles/_video-card.scss */
+  .smaller-video#videoWrapper #videoTT {
+    visibility: hidden; }
+
+/* line 83, ../../source/styles/_video-card.scss */
+.full-video#videoWrapper {
+  left: 0px;
+  top: 0px; }
+  /* line 87, ../../source/styles/_video-card.scss */
+  .full-video#videoWrapper #videoClick {
+    width: 100% !important;
+    height: 200px !important; }

@@ -1,0 +1,105 @@
+///////////////////////
+// Banner Setup
+///////////////////////
+body {
+  margin  : 0;
+  padding : 0;
+
+  &.test {
+    #ad {
+      @include position(absolute, 50% null null 50%);
+      @include transform(translate(-50%, -50%));
+    }
+  }
+}
+
+* {
+  box-sizing:border-box;
+}
+
+.hidden {
+  display    : none;
+  visibility : hidden;
+}
+
+.ir {
+  background-color : transparent;
+  border           : 0;
+  overflow         : hidden;
+  /* IE 6/7 fallback */
+  *text-indent     : -9999px;
+
+  &:before {
+    content : "";
+    display : block;
+    width   : 0;
+    height  : 150%;
+  }
+}
+
+///////////////////////
+// Ad Wrapper
+///////////////////////
+// Ad Wrapper
+#ad {
+  @include size($ad-width, $ad-height);
+  display  : none;
+  position : relative;
+  overflow : hidden;
+  background-color: $color-DrkGrey;
+  z-index  : 1;
+
+  &.ready {
+    display : block;
+  }
+}
+
+.bg_image {
+  background-repeat           : no-repeat;
+  background-position         : top left;
+  background-size             : 100% 100%;
+  -webkit-backface-visibility : hidden;
+}
+
+.border-frame {
+  @include position(absolute, null null null null);
+  background-color : $color-border;
+  z-index          : 100;
+
+  &.left {
+    left : 0;
+  }
+  &.right {
+    right : 0;
+  }
+
+  &.left,
+  &.right {
+    top : 0;
+    @include size($border-width, 100%);
+  }
+
+  &.top {
+    top : 0;
+  }
+  &.bottom {
+    bottom : 0;
+  }
+
+  &.top,
+  &.bottom {
+    left : 0;
+    @include size(100%, $border-width);
+  }
+}
+
+///////////////////////
+// Click Tag
+///////////////////////
+// BG Exit Link
+.bg-exit {
+  &.fill {
+    @include fill();
+  }
+  cursor : pointer;
+}

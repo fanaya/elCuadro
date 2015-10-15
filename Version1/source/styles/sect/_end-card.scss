@@ -1,0 +1,203 @@
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+//// CLOSE AD BUTTON
+
+#ytClose_dc { z-index: 30; }
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+//// FULLSCREEN VIDEO
+
+#videoTT{
+  @include position(absolute, 10px null null 10px );
+  svg, use{width:80px;fill:$color-Green}
+}
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+//// OVER VIDEO CAP
+#videoCap{
+   @include position(absolute, 0px null null 0px);
+   @include size(446px, 250px);
+   background-color: $color-black;
+   z-index: 6;
+}
+#ttVid {
+  @include position(absolute, 26px null null 157px);
+  svg, use{width:128px;fill:$color-Green}
+  z-index: 2;
+}
+#actionTxt{
+  @include position(absolute, 182px null null 82px);
+  @include size(282px, 15px);
+  svg, path{fill:$color-white}
+  z-index: 2;
+}
+#playVideoButton {
+  @include position(absolute, 96px null null 194px);
+  @include size(58px, 58px);
+  overflow : hidden;
+  svg,
+  circle {fill:$color-black;fill-opacity:0.5;stroke:$color-white;stroke-width:8;stroke-miterlimit:10;};
+  polyline {fill:$color-white;fill-opacity:1;stroke:$color-white;stroke-width:2;};
+  cursor: pointer;
+  &:hover {
+    svg,
+    circle {fill:$color-black;fill-opacity:0.5;stroke:$color-Green;stroke-width:8;stroke-miterlimit:10;};
+    polyline {fill:$color-Green;fill-opacity:1;stroke:$color-Green;stroke-width:2;};
+  }
+  z-index: 11;
+}
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+//THUMBNAILS
+
+#thumbnails {
+  @include position(absolute, 0px null null 446px);
+  @include size(128px, 250px);
+  z-index:6;
+}
+#div1{
+  @include position(absolute, 70px null null 0px);
+  @include size(128px, 3px);
+  svg,
+  rect{fill:$color-white};
+  z-index:4;
+}
+#div2{
+  @include position(absolute, 153px null null 0px);
+  @include size(128px, 3px);
+  svg,
+  use{fill:$color-white};
+  z-index:4;
+}
+#thumbTxt1{
+  @extend .thumbTxtStyle;
+}
+#thumbTxt2{
+  @extend .thumbTxtStyle;
+}
+#thumbTxt3{
+  @extend .thumbTxtStyle;
+}
+.thumbTxtStyle{
+  @include position(absolute, 62px null null 14px);
+  @include size(103px, 8px);
+  z-index:3;
+  pointer-events:none;
+  svg,
+  use{fill:$color-white};
+}
+#white1{
+  @extend .whiteFade;
+}
+#white2{
+  @extend .whiteFade;
+}
+#white3{
+  @extend .whiteFade;
+}
+.whiteFade{
+  @include fill();
+  background-color: $color-white;
+  opacity: 0;
+  z-index: 3;
+}
+#thumb1 {
+  @include position(absolute, 0px null null 0px);
+  @include size(128px, 84px);
+  background-image: url("../img/thumb1.jpg");
+  z-index:1;
+  &:hover {
+    //#thumbTxt1{svg, use{fill:$color-grey}};
+    #white1{opacity: 0.5 !important;}
+  }
+  cursor: pointer;
+}
+#thumb2 {
+  @include position(absolute, 84px null null 0px);
+  @include size(128px, 83px);
+  background-image: url("../img/thumb2.jpg");
+  z-index:1;
+  &:hover {
+    //#thumbTxt2{svg, use{fill:$color-grey}};
+    #white2{opacity: 0.5 !important;}
+  }
+  cursor: pointer;
+}
+#thumb3 {
+  @include position(absolute, 167px null null 0px);
+  @include size(128px, 83px);
+  background-image: url("../img/thumb3.jpg");
+  z-index:1;
+  &:hover {
+    //#thumbTxt3{svg, use{fill:$color-grey}};
+    #white3{opacity: 0.5 !important;}
+  }
+  cursor: pointer;
+}
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+//// RIGHT SIDE
+
+// Logo ------------------------
+#tt {
+  @include position(absolute, 17px null null 698px);
+  @include size(147px, 51px);
+  svg, path{fill:$color-Green}
+}
+
+// Header ----------------------
+#tag{
+  @include position(absolute, 107px null null 608px);
+  @include size(324px, 45px);
+  svg, path{fill:$color-white}
+}
+
+// CTA Button --------------------
+#cta{
+  @include position(absolute, 193px null null 649px);
+  @include size(246px, 38px);
+  svg, rect{fill:$color-Green};
+  &:hover {
+    svg, rect{fill:$color-white};
+    #ctaTxt{svg, path{fill:$color-Green}};
+  }
+  z-index : 11;
+  cursor: pointer;
+}
+
+// CTA Txt ----------------------
+#ctaTxt{
+  @include position(absolute, 11px null null 28px);
+  @include size(189px, 15px);
+  svg, path{fill:$color-white};
+  z-index : 3;
+}
+
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+
+// Z-indices
+#end-card {
+  z-index : 1;
+
+  > .bg-exit {
+    z-index : 5;
+  }
+}
+
+#actionTxt,
+#ttVid,
+#div,
+#div2,
+#tt,
+#tag,
+{
+  pointer-events:none;
+}
