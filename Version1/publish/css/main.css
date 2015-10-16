@@ -2,11 +2,11 @@
  * ~~~~~~~~~~~~~~~~~~~~~~ Sense 8 | Banners ~~~~~~~~~~~~~~~~~~~~~~
  * ===============================================================
  */
-/* line 4, ../../source/styles/_core.scss */
+/* line 4, ../../source/styles/sect/_core.scss */
 body {
   margin: 0;
   padding: 0; }
-  /* line 9, ../../source/styles/_core.scss */
+  /* line 9, ../../source/styles/sect/_core.scss */
   body.test #ad {
     position: absolute;
     top: 50%;
@@ -17,30 +17,30 @@ body {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
-/* line 16, ../../source/styles/_core.scss */
+/* line 16, ../../source/styles/sect/_core.scss */
 * {
   box-sizing: border-box; }
 
-/* line 20, ../../source/styles/_core.scss */
+/* line 20, ../../source/styles/sect/_core.scss */
 .hidden {
   display: none;
   visibility: hidden; }
 
-/* line 25, ../../source/styles/_core.scss */
+/* line 25, ../../source/styles/sect/_core.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
   *text-indent: -9999px; }
-  /* line 32, ../../source/styles/_core.scss */
+  /* line 32, ../../source/styles/sect/_core.scss */
   .ir:before {
     content: "";
     display: block;
     width: 0;
     height: 150%; }
 
-/* line 44, ../../source/styles/_core.scss */
+/* line 44, ../../source/styles/sect/_core.scss */
 #ad {
   width: 970px;
   height: 250px;
@@ -49,49 +49,49 @@ body {
   overflow: hidden;
   background-color: #424242;
   z-index: 1; }
-  /* line 52, ../../source/styles/_core.scss */
+  /* line 52, ../../source/styles/sect/_core.scss */
   #ad.ready {
     display: block; }
 
-/* line 57, ../../source/styles/_core.scss */
+/* line 57, ../../source/styles/sect/_core.scss */
 .bg_image {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100% 100%;
   -webkit-backface-visibility: hidden; }
 
-/* line 64, ../../source/styles/_core.scss */
+/* line 64, ../../source/styles/sect/_core.scss */
 .border-frame {
   position: absolute;
   background-color: #000;
   z-index: 100; }
-  /* line 69, ../../source/styles/_core.scss */
+  /* line 69, ../../source/styles/sect/_core.scss */
   .border-frame.left {
     left: 0; }
-  /* line 72, ../../source/styles/_core.scss */
+  /* line 72, ../../source/styles/sect/_core.scss */
   .border-frame.right {
     right: 0; }
-  /* line 76, ../../source/styles/_core.scss */
+  /* line 76, ../../source/styles/sect/_core.scss */
   .border-frame.left, .border-frame.right {
     top: 0;
     width: 1px;
     height: 100%; }
-  /* line 82, ../../source/styles/_core.scss */
+  /* line 82, ../../source/styles/sect/_core.scss */
   .border-frame.top {
     top: 0; }
-  /* line 85, ../../source/styles/_core.scss */
+  /* line 85, ../../source/styles/sect/_core.scss */
   .border-frame.bottom {
     bottom: 0; }
-  /* line 89, ../../source/styles/_core.scss */
+  /* line 89, ../../source/styles/sect/_core.scss */
   .border-frame.top, .border-frame.bottom {
     left: 0;
     width: 100%;
     height: 1px; }
 
-/* line 100, ../../source/styles/_core.scss */
+/* line 100, ../../source/styles/sect/_core.scss */
 .bg-exit {
   cursor: pointer; }
-  /* line 101, ../../source/styles/_core.scss */
+  /* line 101, ../../source/styles/sect/_core.scss */
   .bg-exit.fill {
     position: absolute;
     top: 0;
@@ -99,21 +99,21 @@ body {
     width: 100%;
     height: 100%; }
 
-/* line 6, ../../source/styles/_end-card.scss */
+/* line 6, ../../source/styles/sect/_end-card.scss */
 #ytClose_dc {
   z-index: 30; }
 
-/* line 12, ../../source/styles/_end-card.scss */
+/* line 12, ../../source/styles/sect/_end-card.scss */
 #videoTT {
   position: absolute;
   top: 10px;
   left: 10px; }
-  /* line 14, ../../source/styles/_end-card.scss */
+  /* line 14, ../../source/styles/sect/_end-card.scss */
   #videoTT svg, #videoTT use {
     width: 80px;
     fill: #66aa33; }
 
-/* line 21, ../../source/styles/_end-card.scss */
+/* line 21, ../../source/styles/sect/_end-card.scss */
 #videoCap {
   position: absolute;
   top: 0px;
@@ -123,18 +123,18 @@ body {
   background-color: #000;
   z-index: 6; }
 
-/* line 27, ../../source/styles/_end-card.scss */
+/* line 27, ../../source/styles/sect/_end-card.scss */
 #ttVid {
   position: absolute;
   top: 26px;
   left: 157px;
   z-index: 2; }
-  /* line 29, ../../source/styles/_end-card.scss */
+  /* line 29, ../../source/styles/sect/_end-card.scss */
   #ttVid svg, #ttVid use {
     width: 128px;
     fill: #66aa33; }
 
-/* line 32, ../../source/styles/_end-card.scss */
+/* line 32, ../../source/styles/sect/_end-card.scss */
 #actionTxt {
   position: absolute;
   top: 182px;
@@ -142,11 +142,11 @@ body {
   width: 282px;
   height: 15px;
   z-index: 2; }
-  /* line 35, ../../source/styles/_end-card.scss */
+  /* line 35, ../../source/styles/sect/_end-card.scss */
   #actionTxt svg, #actionTxt path {
     fill: #FFF; }
 
-/* line 38, ../../source/styles/_end-card.scss */
+/* line 38, ../../source/styles/sect/_end-card.scss */
 #playVideoButton {
   position: absolute;
   top: 96px;
@@ -156,7 +156,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   z-index: 11; }
-  /* line 42, ../../source/styles/_end-card.scss */
+  /* line 42, ../../source/styles/sect/_end-card.scss */
   #playVideoButton svg,
   #playVideoButton circle {
     fill: #000;
@@ -164,13 +164,13 @@ body {
     stroke: #FFF;
     stroke-width: 8;
     stroke-miterlimit: 10; }
-  /* line 44, ../../source/styles/_end-card.scss */
+  /* line 44, ../../source/styles/sect/_end-card.scss */
   #playVideoButton polyline {
     fill: #FFF;
     fill-opacity: 1;
     stroke: #FFF;
     stroke-width: 2; }
-  /* line 47, ../../source/styles/_end-card.scss */
+  /* line 47, ../../source/styles/sect/_end-card.scss */
   #playVideoButton:hover svg,
   #playVideoButton:hover circle {
     fill: #000;
@@ -178,14 +178,14 @@ body {
     stroke: #66aa33;
     stroke-width: 8;
     stroke-miterlimit: 10; }
-  /* line 49, ../../source/styles/_end-card.scss */
+  /* line 49, ../../source/styles/sect/_end-card.scss */
   #playVideoButton:hover polyline {
     fill: #66aa33;
     fill-opacity: 1;
     stroke: #66aa33;
     stroke-width: 2; }
 
-/* line 58, ../../source/styles/_end-card.scss */
+/* line 58, ../../source/styles/sect/_end-card.scss */
 #thumbnails {
   position: absolute;
   top: 0px;
@@ -194,7 +194,7 @@ body {
   height: 250px;
   z-index: 6; }
 
-/* line 63, ../../source/styles/_end-card.scss */
+/* line 63, ../../source/styles/sect/_end-card.scss */
 #div1 {
   position: absolute;
   top: 70px;
@@ -202,12 +202,12 @@ body {
   width: 128px;
   height: 3px;
   z-index: 4; }
-  /* line 66, ../../source/styles/_end-card.scss */
+  /* line 66, ../../source/styles/sect/_end-card.scss */
   #div1 svg,
   #div1 rect {
     fill: #FFF; }
 
-/* line 70, ../../source/styles/_end-card.scss */
+/* line 70, ../../source/styles/sect/_end-card.scss */
 #div2 {
   position: absolute;
   top: 153px;
@@ -215,12 +215,12 @@ body {
   width: 128px;
   height: 3px;
   z-index: 4; }
-  /* line 73, ../../source/styles/_end-card.scss */
+  /* line 73, ../../source/styles/sect/_end-card.scss */
   #div2 svg,
   #div2 use {
     fill: #FFF; }
 
-/* line 86, ../../source/styles/_end-card.scss */
+/* line 86, ../../source/styles/sect/_end-card.scss */
 .thumbTxtStyle, #thumbTxt1, #thumbTxt2, #thumbTxt3 {
   position: absolute;
   top: 62px;
@@ -229,7 +229,7 @@ body {
   height: 8px;
   z-index: 3;
   pointer-events: none; }
-  /* line 91, ../../source/styles/_end-card.scss */
+  /* line 91, ../../source/styles/sect/_end-card.scss */
   .thumbTxtStyle svg, #thumbTxt1 svg, #thumbTxt2 svg, #thumbTxt3 svg,
   .thumbTxtStyle use,
   #thumbTxt1 use,
@@ -237,7 +237,7 @@ body {
   #thumbTxt3 use {
     fill: #FFF; }
 
-/* line 103, ../../source/styles/_end-card.scss */
+/* line 103, ../../source/styles/sect/_end-card.scss */
 .whiteFade, #white1, #white2, #white3 {
   position: absolute;
   top: 0;
@@ -248,7 +248,7 @@ body {
   opacity: 0;
   z-index: 3; }
 
-/* line 109, ../../source/styles/_end-card.scss */
+/* line 109, ../../source/styles/sect/_end-card.scss */
 #thumb1 {
   position: absolute;
   top: 0px;
@@ -258,11 +258,11 @@ body {
   background-image: url("../img/thumb1.jpg");
   z-index: 1;
   cursor: pointer; }
-  /* line 116, ../../source/styles/_end-card.scss */
+  /* line 116, ../../source/styles/sect/_end-card.scss */
   #thumb1:hover #white1 {
     opacity: 0.5 !important; }
 
-/* line 120, ../../source/styles/_end-card.scss */
+/* line 120, ../../source/styles/sect/_end-card.scss */
 #thumb2 {
   position: absolute;
   top: 84px;
@@ -272,11 +272,11 @@ body {
   background-image: url("../img/thumb2.jpg");
   z-index: 1;
   cursor: pointer; }
-  /* line 127, ../../source/styles/_end-card.scss */
+  /* line 127, ../../source/styles/sect/_end-card.scss */
   #thumb2:hover #white2 {
     opacity: 0.5 !important; }
 
-/* line 131, ../../source/styles/_end-card.scss */
+/* line 131, ../../source/styles/sect/_end-card.scss */
 #thumb3 {
   position: absolute;
   top: 167px;
@@ -286,33 +286,33 @@ body {
   background-image: url("../img/thumb3.jpg");
   z-index: 1;
   cursor: pointer; }
-  /* line 138, ../../source/styles/_end-card.scss */
+  /* line 138, ../../source/styles/sect/_end-card.scss */
   #thumb3:hover #white3 {
     opacity: 0.5 !important; }
 
-/* line 148, ../../source/styles/_end-card.scss */
+/* line 148, ../../source/styles/sect/_end-card.scss */
 #tt {
   position: absolute;
   top: 17px;
   left: 698px;
   width: 147px;
   height: 51px; }
-  /* line 151, ../../source/styles/_end-card.scss */
+  /* line 151, ../../source/styles/sect/_end-card.scss */
   #tt svg, #tt path {
     fill: #66aa33; }
 
-/* line 155, ../../source/styles/_end-card.scss */
+/* line 155, ../../source/styles/sect/_end-card.scss */
 #tag {
   position: absolute;
   top: 107px;
   left: 608px;
   width: 324px;
   height: 45px; }
-  /* line 158, ../../source/styles/_end-card.scss */
+  /* line 158, ../../source/styles/sect/_end-card.scss */
   #tag svg, #tag path {
     fill: #FFF; }
 
-/* line 162, ../../source/styles/_end-card.scss */
+/* line 162, ../../source/styles/sect/_end-card.scss */
 #cta {
   position: absolute;
   top: 193px;
@@ -321,17 +321,17 @@ body {
   height: 38px;
   z-index: 11;
   cursor: pointer; }
-  /* line 165, ../../source/styles/_end-card.scss */
+  /* line 165, ../../source/styles/sect/_end-card.scss */
   #cta svg, #cta rect {
     fill: #66aa33; }
-  /* line 167, ../../source/styles/_end-card.scss */
+  /* line 167, ../../source/styles/sect/_end-card.scss */
   #cta:hover svg, #cta:hover rect {
     fill: #FFF; }
-  /* line 168, ../../source/styles/_end-card.scss */
+  /* line 168, ../../source/styles/sect/_end-card.scss */
   #cta:hover #ctaTxt svg, #cta:hover #ctaTxt path {
     fill: #66aa33; }
 
-/* line 175, ../../source/styles/_end-card.scss */
+/* line 175, ../../source/styles/sect/_end-card.scss */
 #ctaTxt {
   position: absolute;
   top: 11px;
@@ -339,18 +339,18 @@ body {
   width: 189px;
   height: 15px;
   z-index: 3; }
-  /* line 178, ../../source/styles/_end-card.scss */
+  /* line 178, ../../source/styles/sect/_end-card.scss */
   #ctaTxt svg, #ctaTxt path {
     fill: #FFF; }
 
-/* line 187, ../../source/styles/_end-card.scss */
+/* line 187, ../../source/styles/sect/_end-card.scss */
 #end-card {
   z-index: 1; }
-  /* line 190, ../../source/styles/_end-card.scss */
+  /* line 190, ../../source/styles/sect/_end-card.scss */
   #end-card > .bg-exit {
     z-index: 5; }
 
-/* line 195, ../../source/styles/_end-card.scss */
+/* line 195, ../../source/styles/sect/_end-card.scss */
 #actionTxt,
 #ttVid,
 #div,
@@ -359,7 +359,7 @@ body {
 #tag {
   pointer-events: none; }
 
-/* line 2, ../../source/styles/_video-card.scss */
+/* line 2, ../../source/styles/sect/_video-card.scss */
 #video-frame {
   position: absolute;
   top: 0;
@@ -369,7 +369,7 @@ body {
   z-index: 2;
   background-color: #FFF; }
 
-/* line 8, ../../source/styles/_video-card.scss */
+/* line 8, ../../source/styles/sect/_video-card.scss */
 #snd-icon {
   position: absolute;
   bottom: 10px;
@@ -377,12 +377,12 @@ body {
   width: 15px;
   height: 15px;
   overflow: hidden; }
-  /* line 13, ../../source/styles/_video-card.scss */
+  /* line 13, ../../source/styles/sect/_video-card.scss */
   #snd-icon svg,
   #snd-icon path {
     fill: #66aa33; }
 
-/* line 20, ../../source/styles/_video-card.scss */
+/* line 20, ../../source/styles/sect/_video-card.scss */
 .hide {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
@@ -393,7 +393,7 @@ body {
   position: absolute !important;
   width: 1px !important; }
 
-/* line 31, ../../source/styles/_video-card.scss */
+/* line 31, ../../source/styles/sect/_video-card.scss */
 #videoWrapper {
   position: absolute;
   top: 0;
@@ -403,12 +403,12 @@ body {
   height: 250px;
   z-index: 10; }
 
-/* line 39, ../../source/styles/_video-card.scss */
+/* line 39, ../../source/styles/sect/_video-card.scss */
 #videoContainer {
   width: 100%;
   height: 100%; }
 
-/* line 43, ../../source/styles/_video-card.scss */
+/* line 43, ../../source/styles/sect/_video-card.scss */
 #videoClick {
   position: absolute;
   top: 0;
@@ -418,7 +418,7 @@ body {
   z-index: 11;
   cursor: pointer; }
 
-/* line 50, ../../source/styles/_video-card.scss */
+/* line 50, ../../source/styles/sect/_video-card.scss */
 #close {
   z-index: 12;
   position: absolute;
@@ -427,25 +427,25 @@ body {
   transform: scale(0.8);
   cursor: pointer; }
 
-/* line 61, ../../source/styles/_video-card.scss */
+/* line 61, ../../source/styles/sect/_video-card.scss */
 .smaller-video#videoWrapper {
   left: 0px;
   top: 0px;
   width: 446px !important;
   height: 250px !important; }
-  /* line 69, ../../source/styles/_video-card.scss */
+  /* line 69, ../../source/styles/sect/_video-card.scss */
   .smaller-video#videoWrapper #videoClick {
     width: 100% !important;
     height: 200px !important; }
-  /* line 75, ../../source/styles/_video-card.scss */
+  /* line 75, ../../source/styles/sect/_video-card.scss */
   .smaller-video#videoWrapper #videoTT {
     visibility: hidden; }
 
-/* line 83, ../../source/styles/_video-card.scss */
+/* line 83, ../../source/styles/sect/_video-card.scss */
 .full-video#videoWrapper {
   left: 0px;
   top: 0px; }
-  /* line 87, ../../source/styles/_video-card.scss */
+  /* line 87, ../../source/styles/sect/_video-card.scss */
   .full-video#videoWrapper #videoClick {
     width: 100% !important;
     height: 200px !important; }

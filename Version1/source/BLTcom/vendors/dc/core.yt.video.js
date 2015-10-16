@@ -1,20 +1,21 @@
 /* global Enabler */
 /* global studioinnovation */
 /* global console */
+/* global BLTdc */
 
 console.log ('BLT // YOUTUBE VIDEO');
 
 var BLTvid = {};
-    BLTvid.coreReady = false;
-    BLTvid.ytp;
     BLTvid.ytPlayer = {};
-    BLTvid.containerId;
-    BLTvid.videoId;
-    BLTvid.videoWidth;
-    BLTvid.videoHeight;
-    BLTvid.autoplay = 1;
-    BLTvid.controls = 1;
-    BLTvid.selectedVideo = 0;
+    BLTvid.coreReady = false,
+    BLTvid.ytp,
+    BLTvid.containerId,
+    BLTvid.videoId,
+    BLTvid.videoWidth,
+    BLTvid.videoHeight,
+    BLTvid.autoplay = 1,
+    BLTvid.controls = 1,
+    BLTvid.selectedVideo = 0,
     BLTvid.initialVideo = true;
 
 BLTvid.DCready = function() {
@@ -48,7 +49,7 @@ BLTvid.setVideoProperties = function() {
 BLTvid.getVideoEnabler = function(){
     document.removeEventListener("getVidEnabler", BLTvid.getVideoEnabler);
     if(BLTvid.coreReady){ BLTvid.initVideo();
-    }else{ document.addEventListener(DC.events.CORE_READY, BLTvid.initVideo);}
+    }else{ document.addEventListener(BLTdc.events.CORE_READY, BLTvid.initVideo);}
 };
 
 BLTvid.YTFunction = function(){
@@ -161,7 +162,7 @@ BLTvid.replayVideo = function(){
     BLTvid.ytp.loadVideoById(BLTvid.videoId[BLTvid.selectedVideo],0);
 };
 
-document.addEventListener(DC.events.CORE_READY,BLTvid.DCready);
+document.addEventListener(BLTdc.events.CORE_READY,BLTvid.DCready);
 document.addEventListener("setVideoProperties", BLTvid.setVideoProperties, true);
 document.addEventListener("getVidEnabler", BLTvid.getVideoEnabler);
 document.addEventListener('switchVideo', BLTvid.switchVideo, true);

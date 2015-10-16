@@ -6,6 +6,7 @@
 /* global TweenLite */
 /* global TimelineLite */
 /* jshint undef: false, debug: true, devel: true */
+//frankie
 
 //var clickTag = "http://www.hulu.com/start/nocommercials";
 
@@ -314,4 +315,3 @@ BLT.vid.replayVideo = function(){
 /////////
 // Start Ad
 BLT.adReady();
-

@@ -8,11 +8,12 @@
 
     <!-- google -->
     <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
     <script src="https://apis.google.com/js/platform.js"></script>
     <script src="https://www.gstatic.com/external_hosted/polymer/custom.elements.min.js"></script>
     <script src="https://www.gstatic.com/ads/ci/ytclosebutton/1/ytclosebutton_min.js"></script>
     <!--pixel tracker-->
-    <script src="https://www.gstatic.com/ads/ci/studio/pixelloader/1/pixelloader_min.js"></script>
+    <!--<script src="https://www.gstatic.com/ads/ci/studio/pixelloader/1/pixelloader_min.js"></script>-->
   </head>
   <body>
       <!-- Ad Unit -->
@@ -137,39 +138,18 @@
       <!--close buton-->
       <ci-ytclosebutton lang="eng" theme="white" shadow="true" id="ytClose_dc"></ci-ytclosebutton>
 
-      <!--IMPRESSION PIXELS   --  adometry   -->
-      <ci-studio-pixelloader
-              eventtype="auto"
-              url="https://log.dmtry.com/redir/1/38/4041/1042716/0/1/125/0/917/1.ver?at=i&d=PxImp&img=1">
-      </ci-studio-pixelloader>
-
-      <!--IMPRESSION PIXELS   --  Millward Brown   -->
-      <ci-studio-pixelloader
-              eventtype="auto"
-              url="https://secure.insightexpressai.com/adServer/adServerESI.aspx?bannerID=516315&siteID=%s&creativeID=%ecid!&placementID=%epid!&rnd=%n">
-      </ci-studio-pixelloader>
-
-      <!--&lt;!&ndash;IMPRESSION EXITS&ndash;&gt;-->
+      <!--&lt;!&ndash;IMPRESSION PIXELS   &#45;&#45;  adometry   &ndash;&gt;-->
       <!--<ci-studio-pixelloader-->
-              <!--eventtype="exit"-->
-              <!--eventtarget="enabler"-->
-              <!--url="https://ad.doubleclick.net/ddm/trackclk/N624.127733.3444728333621/B8892680.121432436;dc_trk_aid=294400149;dc_trk_cid=64752597">-->
+              <!--eventtype="auto"-->
+              <!--url="https://log.dmtry.com/redir/1/38/4041/1042716/0/1/125/0/917/1.ver?at=i&d=PxImp&img=1">-->
       <!--</ci-studio-pixelloader>-->
 
-      <!--&lt;!&ndash;REMARKETING MASTHEAD VIEWS&ndash;&gt;-->
+      <!--&lt;!&ndash;IMPRESSION PIXELS   &#45;&#45;  Millward Brown   &ndash;&gt;-->
       <!--<ci-studio-pixelloader-->
-              <!--eventtype="pageLoaded"-->
-              <!--eventtarget="enabler"-->
-              <!--url="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/900105071/?value=1.00&amp;;currency_code=USD&amp;;label=J9QYCLawm18Q74aarQM&amp;;guid=ON&amp;;script=0">-->
+              <!--eventtype="auto"-->
+              <!--url="https://secure.insightexpressai.com/adServer/adServerESI.aspx?bannerID=516315&siteID=%s&creativeID=%ecid!&placementID=%epid!&rnd=%n">-->
       <!--</ci-studio-pixelloader>-->
 
-      <!--&lt;!&ndash;REMARKETING MASTHEAD CLICKS&ndash;&gt;-->
-      <!--<ci-studio-pixelloader-->
-              <!--eventtype="onclick"-->
-              <!--eventtarget="dom"-->
-              <!--domelementid="adContainer"-->
-              <!--url="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/900105071/?value=1.00&amp;;currency_code=USD&amp;;label=lJX1CK_CnF8Q74aarQM&amp;;guid=ON&amp;;script=0">-->
-      <!--</ci-studio-pixelloader>-->
     </div>
     <script type="text/javascript" language="javascript" src="js/init.js"></script>
   </body>
